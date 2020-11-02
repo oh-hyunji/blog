@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <!-- google web font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Trispace:wght@100;200;300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- jquery-3.5.0.js -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <!-- side -->
+    <div id="sideBar">
+        <div id="sideBox">
+            <img src="./img/profile.png" alt="이미지">
+            <div id="sideText">
+                <p class="han">소중한 일상의 기록 -</p>
+                <h1>MY BLOG!</h1>
+            </div>
+        </div>
+        <nav id="navi">
+            <ul id="naviBox">
+                <li class="menu1" data-target="#contents">ALBUM</li>
+                <li class="menu1" data-target="#sectionB">BOOK</li>
+                <li class="menu1" data-target="#graphBox">HOBBY</li>
+                <li class="menu1" data-target="#sectionC">CHART</li>
+                <li class="menu1" data-target="#foot">FOOTER</li>
+            </ul>
+        </nav>
+    </div>
+    <!-- modal -->
+    <div id="modal"></div>
+    <!-- contents -->
+    <div id="contents">
+        <div id="title">
+            <div id="topMenu">
+                <div class="side_bt"><i class="fas fa-align-justify icon"></i></div>
+                <h1>MY BLOG!</h1>
+            </div>
+            <ul id="menuBox">
+                <li class="menu2">All</li>
+                <li class="menu2">DAILY</li>
+                <li class="menu2">WEEK</li>
+                <li class="menu2 off">MONTH</li>
+            </ul>
+        </div>
+        <!-- sectionA -->
+        <section id="sectionA" class="section">
+            <div id="boxA">
+                <div class="imgBoxA">
+                    <img src="./img/blog1.png" alt="이미지">
+                    <div class="infoBoxA">
+                        <p><strong class="han">해바라기 여행</strong> - 2020.10.10</p>
+                        <p class="han">희망의 인생을 같으며, 내려온 할지니, 옷을 어디 이는 얼음에 약동하다. 방황하여도, 피가 같지 인간이 아니한 쓸쓸하랴? 꽃이 이것이야말로 내는 길을 풀밭에...</p>
+                    </div>
+                </div>
+                <div class="imgBoxA">
+                    <img src="./img/blog2.png" alt="이미지">
+                    <div class="infoBoxA">
+                        <p><strong class="han">EAT DID YOU</strong> - 2020.10.10</p>
+                        <p class="han">희망의 인생을 같으며, 내려온 할지니, 옷을 어디 이는 얼음에 약동하다. 방황하여도, 피가 같지 인간이 아니한 쓸쓸하랴? 꽃이 이것이야말로 내는 길을 풀밭에...</p>
+                    </div>
+                </div>
+                <div class="imgBoxA">
+                    <img src="./img/blog3.png" alt="이미지">
+                    <div class="infoBoxA">
+                        <p><strong class="han">대만 3박 4일 (1탄)</strong> - 2020.08.12</p>
+                        <p class="han">희망의 인생을 같으며, 내려온 할지니, 옷을 어디 이는 얼음에 약동하다. 방황하여도, 피가 같지 인간이 아니한 쓸쓸하랴? 꽃이 이것이야말로 내는 길을 풀밭에...</p>
+                    </div>
+                </div>
+                <div class="imgBoxA">
+                    <img src="./img/blog4.png" alt="이미지">
+                    <div class="infoBoxA">
+                        <p><strong class="han">대만 3박 4일 (2탄)</strong> - 2020.01.20</p>
+                        <p class="han">희망의 인생을 같으며, 내려온 할지니, 옷을 어디 이는 얼음에 약동하다. 방황하여도, 피가 같지 인간이 아니한 쓸쓸하랴? 꽃이 이것이야말로 내는 길을 풀밭에...</p>
+                    </div>
+                </div>
+                <div class="imgBoxA">
+                    <img src="./img/blog5.png" alt="이미지">
+                    <div class="infoBoxA">
+                        <p><strong class="han">속초 GOGO 카페</strong> - 2020.01.21</p>
+                        <p class="han">희망의 인생을 같으며, 내려온 할지니, 옷을 어디 이는 얼음에 약동하다. 방황하여도, 피가 같지 인간이 아니한 쓸쓸하랴? 꽃이 이것이야말로 내는 길을 풀밭에...</p>
+                    </div>
+                </div>
+                <div class="imgBoxA">
+                    <img src="./img/blog6.png" alt="이미지">
+                    <div class="infoBoxA">
+                        <p><strong class="han">코스모스</strong> - 2019.10.22</p>
+                        <p class="han">희망의 인생을 같으며, 내려온 할지니, 옷을 어디 이는 얼음에 약동하다. 방황하여도, 피가 같지 인간이 아니한 쓸쓸하랴? 꽃이 이것이야말로 내는 길을 풀밭에...</p>
+                    </div>
+                </div>
+            </div>
+            <ul id="pageBox">
+                <li class="page"><i class="fas fa-angle-double-left"></i></li>
+                <li class="page on">1</li>
+                <li class="page">2</li>
+                <li class="page">3</li>
+                <li class="page">4</li>
+                <li class="page">5</li>
+                <li class="page"><i class="fas fa-angle-double-right"></i></li>
+            </ul>
+        </section>
+        <!-- sectionB -->
+        <section id="sectionB" class="section">
+            <div id="infoBoxB">
+                <Strong>MY BOOK</Strong>
+                <a href="#"><i class="fas fa-plus-square"></i></a>
+            </div> 
+            <div id="boxB">
+                <div class="book_box">
+                    <img src="./img/book1.jpg" alt="bookimg">
+                    <div class="book_title">
+                        <p class="han">어린왕자</p>
+                        <p class="han">앙투안 드 생텍쥐페리</p>
+                    </div>
+                </div>
+                <div class="book_box">
+                    <img src="./img/book2.jpg" alt="bookimg">
+                    <div class="book_title">
+                        <p class="han">나미야 잡화점의 기적</p>
+                        <p class="han">히가시노 게이고</p>
+                    </div>
+                </div>
+                <div class="book_box">
+                    <img src="./img/book3.jpg" alt="bookimg">
+                    <div class="book_title">
+                        <p class="han">소년이 온다</p>
+                        <p class="han">한강</p>
+                    </div>
+                </div>
+                <div class="book_box">
+                    <img src="./img/book4.jpg" alt="bookimg">
+                    <div class="book_title">
+                        <p class="han">냉정과 열정사이</p>
+                        <p class="han">에쿠니 가오리</p>
+                    </div>
+                </div>
+            </div>
+            <!-- graphBox -->
+            <div id="graphBox">
+                <strong>HOBBY</strong>
+                <div class="hobby">
+                    <p class="icon"><i class="fas fa-headphones-alt"></i></p>
+                    <div class="ho_text"><p class="han">음악감상</p></div>
+                    <div class="graphFull">
+                        <div id="photography" class="graph">94%</div>
+                    </div>
+                </div>
+                <div class="hobby">
+                    <p class="icon"><i class="fas fa-camera-retro"></i></p>
+                    <div class="ho_text"><p class="han">사진찍기</p></div>
+                    <div class="graphFull">
+                        <div id="design" class="graph">80%</div>
+                    </div>
+                </div>
+                <div class="hobby">
+                    <p class="icon"><i class="fas fa-walking"></i></p>
+                    <div class="ho_text"><p class="han">산책하기</p></div>
+                    <div class="graphFull">
+                        <div id="photoshop" class="graph">60%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- sectionC -->
+        <section id="sectionC" class="section"> 
+            <strong>CHART</strong>
+           <div id="boxC">
+                <ul class="listBox">
+                    <li class="list">MUSIC</li>
+                    <li class="list han">너도 아는 - 폴킴</li>
+                    <li class="list han">December - 짙은</li>
+                    <li class="list han">SILLY - 데이브레이크</li>
+                    <li class="list han">기다린 만큼, 더 - 검정치마</li>
+                    <li class="list han">세상에게 - 김사월</li>
+                    <li class="list han">가을의 끝자락 - 오왠</li>
+                    <li class="list"><button class="more_bt">music more</button></li>
+                </ul>
+                <ul class="listBox">
+                    <li class="list">MEMO</li>
+                    <li class="list han">오늘 할일</li>
+                    <li class="list han">친구 약속</li>
+                    <li class="list han">땡땡이 생일</li>
+                    <li class="list han">결혼식</li>
+                    <li class="list han">가족 모임</li>
+                    <li class="list han">운동 가기</li>
+                    <li class="list"><button class="more_bt">memo more</button></li>
+                </ul>
+                <ul class="listBox">
+                    <li class="list">DIARY</li>
+                    <li class="list han">2020.10.23</li>
+                    <li class="list han">2020.09.21</li>
+                    <li class="list han">2020.09.17</li>
+                    <li class="list han">2020.08.20</li>
+                    <li class="list han">2020.06.28</li>
+                    <li class="list han">2020.04.04</li>
+                    <li class="list"><button class="more_bt">diary more</button></li>
+                </ul>
+           </div>
+        </section>
+        <!-- footer -->
+        <footer id="foot">
+            <div id="footBox">
+                <div class="contBox">
+                    <strong>FOOTER</strong>
+                    <p class="big han">희망의 인생을 같으며, 내려온 할지니, 옷을 어디 이는 얼음에 약동하다. 방황하여도, 피가 같지 인간이 아니한 쓸쓸하랴? 꽃이 이것이야말로 내는 길을 풀밭에...</p>
+                    <p class="small han">- 오현지 작성</p>
+                </div>
+                <div class="contBox">
+                    <strong>BEST BLOG</strong>
+                    <div id="footImgBox">
+                        <div class="inBox">
+                            <img class="footImg" src="./img/skies.jpg" alt="스카이">
+                            <div class="footText">
+                                <p class="han">제목 - 2020</ㅔ>
+                                <p class="han">희망의 인생을 같으며...</p>
+                            </div>
+                        </div>
+                        <div class="inBox">
+                            <img class="footImg" src="./img/gondol.jpg" alt="곤돌라">
+                            <div class="footText">
+                                <p class="han">제목 - 2019</p>
+                                <p class="han">희망의 인생을 같으며...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contBox">
+                    <strong>POPULAR TAGS</strong>
+                    <div id="tagBox">
+                        <p class="tag">Travel</p>
+                        <p class="tag">DIY</p>
+                        <p class="tag">Ideas</p>
+                        <p class="tag">Art</p>
+                        <p class="tag">Family</p>
+                        <p class="tag">News</p>
+                        <p class="tag">Cloth</p>
+                        <p class="tag">Shop</p>
+                        <p class="tag">Games</p>
+                    </div>
+                </div>
+            </div>
+            <div id="endBox">
+                <p>OH HYUN JI BLOG!</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
