@@ -164,6 +164,8 @@ img {display: block;}
 
 @media screen and (max-width: 500px) {
     #sideBar {width: 80%;}
+    .imgBoxA:nth-child(3n) {margin-right: 0;}
+    .imgBoxA:nth-child(2n) {margin-right: 0;}
     .off {display: none;}
     .contBox {padding: 40px 0;}
     #boxB {padding-bottom: 0;}
