@@ -22,16 +22,14 @@ img {display: block;}
 #naviBox .on {background: #000; color: #fff;}
 .menu1:hover {background: #000; color: #fff;}
 
-
 /* modal */
 #modal {width: 100%; height: 100vh; background: rgba(0,0,0,.5); position: fixed; z-index: 15; display: none; cursor: pointer;}
-
 
 /* contents */
 #contents {width: 84%; margin-left: 16%; position: absolute;}
 
 /* topMenu - pad, mobile */
-#title {width: 100%; display: flex; align-items: center; flex-wrap: wrap; padding: 40px 58px;}
+#title {width: 100%; display: flex; align-items: center; flex-wrap: wrap; padding: 35px 58px;}
 #topMenu {margin-bottom: 40px; display: none; width: 100%; flex-wrap: wrap; justify-content: center; align-items: center;}
 #topMenu h1 {font-size: 2rem;}
 .side_bt {position: fixed; left: 25px; font-size: 1rem; width: 60px; height: 60px; background: #fafafa; color: #000; display: flex; justify-content: center; align-items: center; border-radius: 100%; z-index: 2;}
@@ -43,23 +41,25 @@ img {display: block;}
 .menu2:first-child {background: #000; color: #fff;}
 .menu2:hover {background: #000; color: #fff;}
 
-
 /* more section */
 .section {width: 100%; padding: 0 40px 40px;}
-
 
 /* sectionA */
 #boxA {width: 100%; display: flex; flex-wrap: wrap; justify-content: center;}
 
 .imgBoxA {width: calc(33% - 20px); background: #f3f1f1; margin: 0 20px 20px 0; color: black;}
 .imgBoxA:nth-child(3n) {margin-right: 0;}
-.imgBoxA img {width: 100%; cursor: pointer;}
-.imgBoxA img:hover {opacity: .4;}
+.img_box {width: 100%; height: 280px; overflow: hidden;}
+.img_box img {width: 100%; cursor: pointer; transition: .3s;}
+.img_box img:hover {transform: scale(1.2);}
 
-.infoBoxA {padding: 15px 30px;}
+.infoBoxA {padding: 15px 30px 0;}
 .infoBoxA strong {font-size: 1.1rem;}
 .infoBoxA p {font-size: 1rem; margin-bottom: 20px; font-size: .85rem; line-height: 1.2rem;}
 .infoBoxA p:first-child {font-size: 1rem; margin: 20px 0 15px;}
+
+.icon_box {display: flex; justify-content: space-between; align-items: center; padding: 0 30px 25px;}
+.icon_box p {font-size: .9rem; color: #333; cursor: pointer;}
 
 /* page */
 #pageBox {display: flex; justify-content: center; margin-top: 20px;}
@@ -67,18 +67,22 @@ img {display: block;}
 .page:hover {color: indianred; font-weight: 600;}
 .on {color: indianred; font-weight: 600;}
 
-
 /* sectionB */
 #boxB {display: flex; flex-wrap: wrap; justify-content: center; width: 100%; padding-bottom: 60px;}
 .book_box {width: calc(25% - 20px); margin: 0 10px;}
-.book_box img {width: 100%;}
+
+.book_img {width: 100%; position: relative; cursor: pointer;}
+.book_img img {width: 100%;}
+.book_modal {position: absolute; width: 100%; height: 35%; background: rgba(0,0,0,.6); bottom: 0; display: flex; justify-content: center; align-items: center; padding: 25px; opacity: 0; transition: .3s;}
+.book_modal p {font-size: .8rem; color: #eaeaea; line-height: 1.3rem;}
+.book_img:hover .book_modal {opacity: 1;}
+
 .book_title p {text-align: center; font-size: .85rem; color: #555;}
 .book_title p:first-child {font-size: 1.1rem; font-weight: 700; padding: 20px 0 8px; color: #333;}
 
 #infoBoxB {padding: 30px 15px 20px; display: flex; align-items: center; justify-content: space-between;}
 #infoBoxB strong {font-size: 1.8rem; font-weight: 600;}
 #infoBoxB a {font-size: 1.5rem; color: #333;}
-
 
 /* graph box */
 #graphBox {padding: 40px 10px 0;}
@@ -92,7 +96,6 @@ img {display: block;}
 .graphFull {width: 80%; height: 40px; margin: 0 20px; background: #eee;}
 .graph {height: 40px; color: #fff; text-align: center; line-height: 40px; background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(142,142,142,1) 100%);}
 #photography, #design, #photoshop {width: 0;}
-
 
 /* sectionC */
 #sectionC strong {display: block; padding: 40px 15px; font-size: 1.8rem; font-weight: 600; text-align: center;}
@@ -108,7 +111,6 @@ img {display: block;}
 
 .more_bt {border: none; background: #333; padding: 10px 20px; border-radius: 25px; color: #fff; transition: .3s;}
 .more_bt:hover {background: #cecece;}
-
 
 /* footer */
 #footBox {display: flex; flex-wrap: wrap; justify-content: center; padding: 40px;}
@@ -128,7 +130,6 @@ img {display: block;}
 #tagBox {display: flex; flex-wrap: wrap;}
 .tag {width: calc(33% - 5px); background: #000; color: #fff; margin-right: 5px; margin-bottom: 10px; text-align: center; font-size: .8rem; padding: 15px 0;}
 #endBox {width: 100%; padding: 40px 0; background: #000; color: #bcbcbc; text-align: center; font-size: .8rem;}
-
 
 /* media */
 @media screen and (max-width: 1024px) {
@@ -155,6 +156,8 @@ img {display: block;}
 @media screen and (max-width: 500px) {
     #sideBar {width: 80%;}
     .off {display: none;}
-   .contBox {padding: 40px 0;}
+    .contBox {padding: 40px 0;}
+    #boxB {padding-bottom: 0;}
+    #sectionC {padding-bottom: 0;}
     #footBox {padding: 20px;}
 }
