@@ -73,7 +73,7 @@ img {display: block;}
 
 .book_img {width: 100%; position: relative; cursor: pointer;}
 .book_img img {width: 100%;}
-.book_modal {position: absolute; width: 100%; height: 35%; background: rgba(0,0,0,.6); bottom: 0; display: flex; justify-content: center; align-items: center; padding: 25px; opacity: 0; transition: .3s;}
+.book_modal {position: absolute; width: 100%; background: rgba(0,0,0,.6); bottom: 0; display: flex; justify-content: center; align-items: center; padding: 25px; opacity: 0; transition: .3s;}
 .book_modal p {font-size: .8rem; color: #eaeaea; line-height: 1.3rem;}
 .book_img:hover .book_modal {opacity: 1;}
 
@@ -142,13 +142,21 @@ img {display: block;}
     #footBox {padding: 40px 20px;}
 }
 
+@media screen and (max-width: 900px) {
+    .imgBoxA {width: calc(50% - 20px);}
+    .imgBoxA:nth-child(3n) {margin-right: 20px;}
+    .imgBoxA:nth-child(2n) {margin-right: 0;}
+    .book_box {width: calc(50% - 20px);}
+    .contBox {width: 100%; padding: 40px; margin: 0;}
+}
+
 @media screen and (max-width: 700px) {
     #sideBar {width: 50%;}
     .imgBoxA {width: 100%; margin: 0 0 20px 0;}
+    .imgBoxA:nth-child(2n) {margin-right: 20px;}
     #boxB img {width: 100%; margin: 0 0 20px 0;}
     .listBox {width: 100%; margin: 0 0 20px 0;}
     .info {width: 100%;}
-    .contBox {width: 100%; padding: 40px; margin: 0;}
     .book_box {width:80%;}
     .book_title p {padding-bottom: 40px;}
     .icon {display: none;}
