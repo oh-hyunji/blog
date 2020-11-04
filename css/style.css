@@ -90,8 +90,9 @@ img {display: block;}
 
 .hobby {display: flex; align-items: center; padding-bottom: 30px;}
 .hobby p {width: 80px; font-size: 2rem; text-align: center;}
-.ho_text {width: 80px; height: 40px; display: flex; justify-content: center; align-items: center; border-radius: 10%; background: #333; color: #fff;}
+.ho_text {width: 80px; height: 40px; display: flex; justify-content: center; align-items: center; border-radius: 10%; background: #333; color: #fff; transition: .3s;}
 .ho_text p {width: 80px; font-size: .85rem; text-align: center; font-weight: 400;}
+.ho_text:hover {background: #444; cursor: pointer;}
 
 .graphFull {width: 80%; height: 40px; margin: 0 20px; background: #eee;}
 .graph {height: 40px; color: #fff; text-align: center; line-height: 40px; background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(142,142,142,1) 100%);}
@@ -110,12 +111,12 @@ img {display: block;}
 .listBox .han:hover {background: #000; color: #fff;}
 
 .more_bt {border: none; background: #333; padding: 10px 20px; border-radius: 25px; color: #fff; transition: .3s;}
-.more_bt:hover {background: #cecece;}
+.more_bt:hover {background: #666;}
 
 /* footer */
 #footBox {display: flex; flex-wrap: wrap; justify-content: center; padding: 40px;}
 .contBox {width: calc(30% - 15px); margin-right: 15px;}
-.contBox strong {display: block; font-size: 1.5rem; margin-bottom: 20px;}
+.contBox strong {display: block; font-size: 1.5rem; margin-bottom: 20px; font-weight: 600;}
 
 .big {font-size: .9rem; margin-bottom: 20px; padding-right: 20px; line-height: 1.4rem;}
 .small {font-size: .9rem; color: gray;}
