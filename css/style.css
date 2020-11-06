@@ -167,8 +167,10 @@ img {display: block;}
     .imgBoxA:nth-child(3n) {margin-right: 0;}
     .imgBoxA:nth-child(2n) {margin-right: 0;}
     .off {display: none;}
-    .contBox {padding: 40px 0;}
+    .contBox {padding: 10px 0 40px;}
     #boxB {padding-bottom: 0;}
     #sectionC {padding-bottom: 0;}
     #footBox {padding: 20px;}
+    .footImg {width: 100%; margin-right: 0;}
+    .footText {position: relative; padding-top: 20px;}
 }
